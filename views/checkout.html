@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout Tienda de Ropa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/checkout.css">
+</head>
+<body>
+
+<main class="Checkout">
+
+<header class="CheckoutHeader">
+<a href="../views/detail.html">
+    <button class="BotonCirculo">&#8249;</button>
+</a>
+
+<h1>Checkout</h1>
+
+<div class="MenuHamburguesa">
+<input type="checkbox" id="AbrirMenu">
+
+<label for="AbrirMenu" class="BotonMenu">
+<span class="Linea Linea1"></span>
+<span class="Linea Linea2"></span>
+<span class="Linea Linea3"></span>
+</label>
+
+<nav class="MenuDesplegable">
+<a href="#">Inicio</a>
+<a href="#">Tienda</a>
+<a href="#">Colecciones</a>
+<a href="#">Ofertas</a>
+<a href="#">Mi Cuenta</a>
+<a href="#">Contacto</a>
+</nav>
+</div>
+</header>
+
+<div class="CheckoutContenido">
+
+<section class="ColumnaIzquierda">
+<section class="ListaProductos">
+
+<article class="Producto">
+<img src="/storage/img/Library=Product1.png" alt="Ropa moderna">
+
+<div class="ProductoInfo">
+<div class="ProductoTexto">
+<div class="ProductoEncabezado">
+<h2>Modern light clothes</h2>
+<button class="BotonPuntos">•••</button>
+</div>
+<p>Dress modern</p>
+<span>$212.99</span>
+</div>
+
+<div class="ProductoCantidad">
+<button class="CantidadBtn">−</button>
+<strong>4</strong>
+<button class="CantidadBtn">+</button>
+</div>
+</div>
+</article>
+
+<article class="Producto">
+<img src="/storage/img/Library=Product2.png" alt="Ropa elegante">
+
+<div class="ProductoInfo">
+<div class="ProductoTexto">
+<div class="ProductoEncabezado">
+<h2>Modern light clothes</h2>
+<button class="BotonPuntos">•••</button>
+</div>
+<p>Dress modern</p>
+<span>$162.99</span>
+</div>
+
+<div class="ProductoCantidad">
+<button class="CantidadBtn">−</button>
+<strong>1</strong>
+<button class="CantidadBtn">+</button>
+</div>
+</div>
+</article>
+
+</section>
+</section>
+
+<section class="ColumnaDerecha">
+<section class="Pago">
+<h3>Shipping Information</h3>
+
+<div class="TarjetaPago">
+<div class="Visa">VISA</div>
+<p>**** **** **** 2143</p>
+<span>⌄</span>
+</div>
+</section>
+
+<section class="Resumen">
+<div class="FilaResumen">
+<p>Total (9 items)</p>
+<strong>$1,014.95</strong>
+</div>
+
+<div class="FilaResumen">
+<p>Shipping Fee</p>
+<strong>$0.00</strong>
+</div>
+
+<div class="FilaResumen">
+<p>Discount</p>
+<strong>$0.00</strong>
+</div>
+
+<hr>
+
+<div class="FilaResumen TotalFinal">
+<p>Sub Total</p>
+<strong>$1,014.95</strong>
+</div>
+</section>
+
+<button class="BotonPagar">Pay</button>
+</section>
+
+</div>
+</main>
+
+</body>
+</html>

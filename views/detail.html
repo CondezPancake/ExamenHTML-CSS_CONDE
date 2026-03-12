@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Product</title>
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/detail.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <header class="header">
+      <span class="hora">9:41</span>
+
+      <div class="header-right">
+        <span class="swb">
+          <img src="../storage/img/Mobile Signal.png" alt="señal">
+          <img src="../storage/img/Wifi.png" alt="wifi">
+          <img src="../storage/img/Battery.png" alt="batería">
+        </span>
+      </div>
+    </header>
+
+    <main class="detail">
+
+      <section class="detail-image">
+        <a href="../index.html" class="back">
+          <img src="../storage/img/BackIcon.png" alt="volver">
+        </a>
+
+        <img class="product-main-img" src="../storage/img/Library=Product2.png" alt="Light Dress Bless">
+
+        <button class="fav active">
+          <img src="../storage/img/heartFAVORITO.png" alt="favorito">
+        </button>
+      </section>
+
+      <section class="detail-info">
+        <div class="title-row">
+          <h1 class="detail-title">Light Dress Bless</h1>
+
+          <div class="quantity">
+            <button class="qty-btn" type="button">−</button>
+            <span class="qty-number">1</span>
+            <button class="qty-btn" type="button">+</button>
+          </div>
+        </div>
+
+        <div class="rating-row">
+          <span class="rating">
+            <img src="../storage/img/estrellaRopa.png" alt="estrella">
+            <span>5.0</span>
+          </span>
+
+          <a href="#" class="reviews">(7.932 reviews)</a>
+        </div>
+
+        <p class="description">
+          Its simple and elegant shape makes it perfect for those of you who like you who want minimalist clothes
+          <a href="#" class="read-more">Read More...</a>
+        </p>
+      </section>
+
+      <section class="detail-options">
+        <div class="option-group">
+          <h2 class="option-title">Choose Size</h2>
+
+        <div class="sizes">
+          <input type="radio" name="size" id="size-s" class="size-input" checked>
+          <label for="size-s" class="size-btn">S</label>
+
+          <input type="radio" name="size" id="size-m" class="size-input">
+          <label for="size-m" class="size-btn">M</label>
+
+          <input type="radio" name="size" id="size-l" class="size-input">
+          <label for="size-l" class="size-btn">L</label>
+
+          <input type="radio" name="size" id="size-xl" class="size-input">
+          <label for="size-xl" class="size-btn">XL</label>
+        </div>
+        </div>
+
+        <div class="option-group color-group">
+          <h2 class="option-title">Color</h2>
+
+          <div class="colors">
+            <button class="color-btn color-1" type="button" aria-label="gris"></button>
+            <button class="color-btn color-2" type="button" aria-label="gris oscuro"></button>
+            <button class="color-btn color-3 active" type="button" aria-label="negro"></button>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="detail-footer">
+      <a href="../views/checkout.html">
+      <button class="btn-cart" type="button">
+        <img src="../storage/img/BolsoIcon.png" alt="bolso">
+        <span class="btn-cart-text">Add to Cart | $162.99</span>
+        <span class="old-price">$190.99</span>
+      </button>
+      </a>
+    </footer>
+
+  </div>
+
+</body>
+</html>

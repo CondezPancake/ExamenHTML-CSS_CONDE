@@ -1,0 +1,374 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html{
+font-size: 62.5%;
+}
+
+body{
+font-family: "Inter", sans-serif;
+background: #ececec;
+color: #111111;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px;
+}
+
+.Checkout{
+width: 100%;
+max-width: 430px;
+background: #ffffff;
+border-radius: 30px;
+padding: 22px;
+position: relative;
+overflow: visible;
+}
+
+.CheckoutHeader{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 28px;
+position: relative;
+}
+
+.CheckoutHeader h1{
+font-size: 2.8rem;
+font-weight: 800;
+}
+
+.BotonCirculo{
+width: 42px;
+height: 42px;
+border-radius: 50%;
+border: 1px solid #d8d8d8;
+background: white;
+font-size: 2.2rem;
+cursor: pointer;
+}
+
+/* MENU HAMBURGUESA */
+.MenuHamburguesa{
+position: relative;
+}
+
+.MenuHamburguesa input[type="checkbox"]{
+display: none;
+}
+
+.BotonMenu{
+width: 42px;
+height: 42px;
+border-radius: 50%;
+border: 1px solid #d8d8d8;
+background: white;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 4px;
+cursor: pointer;
+}
+
+.Linea{
+width: 16px;
+height: 2px;
+background: #111111;
+border-radius: 4px;
+transition: 0.3s ease;
+}
+
+.MenuDesplegable{
+position: absolute;
+top: 52px;
+right: 0;
+width: 190px;
+background: #ffffff;
+border: 1px solid #e4e4e4;
+border-radius: 18px;
+box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+padding: 14px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+opacity: 0;
+pointer-events: none;
+transform: translateY(-10px);
+transition: 0.3s ease;
+z-index: 20;
+}
+
+.MenuDesplegable a{
+text-decoration: none;
+color: #222222;
+font-size: 1.5rem;
+font-weight: 500;
+padding: 10px 12px;
+border-radius: 10px;
+transition: 0.3s ease;
+}
+
+.MenuDesplegable a:hover{
+background: #f5f5f5;
+}
+
+.MenuHamburguesa input[type="checkbox"]:checked + .BotonMenu .Linea1{
+transform: rotate(45deg) translate(4px, 4px);
+}
+
+.MenuHamburguesa input[type="checkbox"]:checked + .BotonMenu .Linea2{
+opacity: 0;
+}
+
+.MenuHamburguesa input[type="checkbox"]:checked + .BotonMenu .Linea3{
+transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.MenuHamburguesa input[type="checkbox"]:checked ~ .MenuDesplegable{
+opacity: 1;
+pointer-events: auto;
+transform: translateY(0);
+}
+
+.CheckoutContenido{
+display: flex;
+flex-direction: column;
+gap: 28px;
+}
+
+.ListaProductos{
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.Producto{
+display: flex;
+gap: 16px;
+padding-bottom: 16px;
+border-bottom: 1px solid #e8e8e8;
+}
+
+.Producto img{
+width: 92px;
+height: 92px;
+object-fit: cover;
+border-radius: 18px;
+flex-shrink: 0;
+}
+
+.ProductoInfo{
+flex: 1;
+display: flex;
+justify-content: space-between;
+gap: 12px;
+}
+
+.ProductoTexto{
+flex: 1;
+}
+
+.ProductoEncabezado{
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+gap: 10px;
+margin-bottom: 6px;
+}
+
+.ProductoTexto h2{
+font-size: 1.6rem;
+font-weight: 800;
+line-height: 1.2;
+}
+
+.BotonPuntos{
+border: none;
+background: transparent;
+font-size: 1.8rem;
+cursor: pointer;
+color: #222222;
+}
+
+.ProductoTexto p{
+font-size: 1.4rem;
+color: #8b8b8b;
+margin-bottom: 10px;
+}
+
+.ProductoTexto span{
+font-size: 2rem;
+font-weight: 800;
+}
+
+.ProductoCantidad{
+display: flex;
+align-items: center;
+gap: 10px;
+align-self: center;
+}
+
+.ProductoCantidad strong{
+font-size: 1.8rem;
+}
+
+.CantidadBtn{
+width: 34px;
+height: 34px;
+border-radius: 50%;
+border: 1px solid #d9d9d9;
+background: white;
+font-size: 2rem;
+cursor: pointer;
+}
+
+.Pago h3{
+font-size: 1.8rem;
+font-weight: 800;
+margin-bottom: 16px;
+}
+
+.TarjetaPago{
+background: #f3f3f3;
+border-radius: 16px;
+padding: 16px;
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.Visa{
+background: #3a57c4;
+color: white;
+font-size: 1.4rem;
+font-weight: 700;
+padding: 8px 12px;
+border-radius: 6px;
+}
+
+.TarjetaPago p{
+flex: 1;
+font-size: 1.5rem;
+}
+
+.TarjetaPago span{
+font-size: 2rem;
+}
+
+.Resumen{
+margin-top: 24px;
+display: flex;
+flex-direction: column;
+gap: 14px;
+}
+
+.FilaResumen{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 10px;
+}
+
+.FilaResumen p{
+font-size: 1.6rem;
+color: #444444;
+}
+
+.FilaResumen strong{
+font-size: 1.8rem;
+font-weight: 800;
+}
+
+.Resumen hr{
+border: none;
+border-top: 1px solid #e4e4e4;
+margin: 4px 0;
+}
+
+.TotalFinal p,
+.TotalFinal strong{
+color: #111111;
+}
+
+.BotonPagar{
+width: 100%;
+margin-top: 24px;
+border: none;
+background: #1d171b;
+color: white;
+padding: 18px;
+border-radius: 40px;
+font-size: 2rem;
+font-weight: 700;
+cursor: pointer;
+}
+
+@media (min-width: 900px){
+.Checkout{
+max-width: 1050px;
+padding: 36px;
+}
+
+.CheckoutHeader{
+margin-bottom: 34px;
+}
+
+.CheckoutHeader h1{
+font-size: 3.4rem;
+}
+
+.CheckoutContenido{
+display: grid;
+grid-template-columns: 1.2fr 0.9fr;
+gap: 40px;
+align-items: start;
+}
+
+.ColumnaDerecha{
+background: #f8f8f8;
+border-radius: 24px;
+padding: 28px;
+}
+
+.Producto{
+padding-bottom: 22px;
+}
+
+.Producto img{
+width: 105px;
+height: 105px;
+}
+
+.ProductoTexto h2{
+font-size: 2rem;
+}
+
+.ProductoTexto span{
+font-size: 2.2rem;
+}
+
+.Pago h3{
+font-size: 2.4rem;
+}
+
+.FilaResumen p{
+font-size: 1.8rem;
+}
+
+.FilaResumen strong{
+font-size: 2rem;
+}
+
+.BotonPagar{
+margin-top: 30px;
+}
+
+.MenuDesplegable{
+width: 220px;
+}
+}
