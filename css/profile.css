@@ -1,0 +1,266 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    }
+    
+    body{
+    font-family: var(--font-primary);
+    font-weight: var(--weight-regular);
+    background:var(--color-04);
+    color:var(--color-01);
+    }
+    
+    .container{
+    max-width:420px;
+    margin:auto;
+    padding:20px;
+    display:grid;
+    gap:20px;
+    }
+    
+    .header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    }
+    
+    .header-left{
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+    }
+    
+    .hora{
+    font-weight:700;
+    font-size:18px;
+    }
+    
+    .header-saludo{
+    font-size:14px;
+    font-weight: 700;
+    color: #787876;
+    }
+    
+    .header-name{
+    font-size:24px;
+    font-weight:700;
+    }
+    
+    .header-right{
+    display:flex;
+    align-items:flex-end;
+    flex-direction: column;
+    gap:10px;
+    }
+    
+    .header-avatar img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    object-fit:cover;
+    display: block;
+    }
+    
+    .swb {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 4px;
+    }
+
+ /* Navegacion */
+
+ .nav  {
+    display: grid;
+    grid-row: auto;
+    margin-right: 17rem;
+ }
+
+ .Inicio {
+   color: var(--color-01);
+   cursor: pointer;
+   text-decoration: none;
+   border: 1px solid;
+   border-color: #787876;
+   display:flex;
+   align-items:center;
+   gap:6px;
+   padding:10px 14px;
+   border-radius:12px;
+   font-size:13px;
+   white-space:nowrap;
+   box-shadow:0 3px 8px rgba(0,0,0,0.05);
+}
+ 
+ .Amigos {
+   color: var(--color-01);
+   cursor: pointer;
+   text-decoration: none;
+   border: 1px solid;
+   border-color: #787876;
+   display:flex;
+   align-items:center;
+   gap:6px;
+   padding:10px 14px;
+   border-radius:12px;
+   font-size:13px;
+   white-space:nowrap;
+   box-shadow:0 3px 8px rgba(0,0,0,0.05);
+}
+ 
+ .Mensajes{
+   color: var(--color-01);
+   cursor: pointer;
+   text-decoration: none;
+   border: 1px solid;
+   border-color: #787876;
+   display:flex;
+   align-items:center;
+   gap:6px;
+   padding:10px 14px;
+   border-radius:12px;
+   font-size:13px;
+   white-space:nowrap;
+   box-shadow:0 3px 8px rgba(0,0,0,0.05);
+ }
+
+ .Configuración {
+   color: var(--color-01);
+   cursor: pointer;
+   text-decoration: none;
+   border: 1px solid;
+   border-color: #787876;
+   display:flex;
+   align-items:center;
+   gap:6px;
+   padding:10px 14px;
+   border-radius:12px;
+   font-size:13px;
+   white-space:nowrap;
+   box-shadow:0 3px 8px rgba(0,0,0,0.05);
+ }
+ .Editar {
+   color: var(--color-01);
+   cursor: pointer;
+   text-decoration: none;
+   border: 1px solid;
+   border-color: #787876;
+   display:flex;
+   align-items:center;
+   gap:6px;
+   padding:10px 14px;
+   border-radius:12px;
+   font-size:13px;
+   white-space:nowrap;
+   box-shadow:0 3px 8px rgba(0,0,0,0.05);
+ }
+ .detail {
+   color: var(--color-01);
+   cursor: pointer;
+   text-decoration: none;
+   border: 1px solid;
+   border-color: #787876;
+   display:flex;
+   align-items:center;
+   gap:6px;
+   padding:10px 14px;
+   border-radius:12px;
+   font-size:13px;
+   white-space:nowrap;
+   box-shadow:0 3px 8px rgba(0,0,0,0.05);
+ }
+
+ /*Información */
+
+ .grande {
+    border-bottom: 1px solid;
+ }
+
+ .Información {
+    max-width:420px;
+    margin:auto;
+    padding:20px;
+    display:grid;
+    gap:20px;
+    border-bottom: 1px solid;
+}
+
+.info{
+    border-bottom: 1px solid;
+}
+
+.yo {
+    max-width:420px;
+    margin:auto;
+    padding:20px;
+    display:grid;
+    gap:20px; 
+    border-bottom: 1px solid;
+}
+
+.latin {
+    max-width:420px;
+    margin: auto;
+    margin-top: 20px;
+    padding:10px;
+    display:grid;
+    gap:20px;
+    border: 1px solid;
+    border-color: #787876;
+    border-radius: 22px ;
+
+}
+
+.parrafo {
+    border: 1px solid;
+    border-color: #787876;
+    border-radius: 22px;
+    padding-left: 10px;
+}
+
+/*responsive */
+
+@media (min-width:1024px){
+   .container{
+     max-width:1280px;
+     padding:32px 32px 40px;
+     gap:28px;
+   }
+ 
+   .header{
+     align-items:center;
+   }
+ 
+   .header-name{
+     font-size:36px;
+   }
+ 
+   .header-saludo{
+     font-size:16px;
+   }
+ 
+   .nav{
+     grid-template-columns:minmax(200px,1fr) 38px;
+     gap: 700px;
+     max-width:200px;
+   }
+
+   .Información{
+      position: relative;
+      top: -270px;
+      align-items: center;
+      grid-template-columns:minmax(320px,1fr) 68px;
+      max-width:760px;
+   }
+   
+   .yo{
+      position: relative;
+      top: -270px
+   }
+   
+   .latin{
+      position: relative;
+      top: -270px
+   }
+}
